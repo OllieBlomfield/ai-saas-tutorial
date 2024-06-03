@@ -23,7 +23,7 @@ import { BotAvatar } from "@/components/bot-avatar";
 import { useProModal } from "@/app/hooks/use-pro-modal";
 import toast from "react-hot-toast";
 
-export const formSchema = z.object({
+const formSchema = z.object({
     prompt: z.string().min(1, {
         message: "Prompt is required",
     }),

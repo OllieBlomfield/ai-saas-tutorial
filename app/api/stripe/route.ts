@@ -6,7 +6,7 @@ import { stripe } from "@/lib/stripe";
 import { absoluteUrl } from "@/lib/utils"
 
 //const settingsUrl = absoluteUrl("/settings");
-const settingsUrl = "http://localhost:3000/settings";
+const settingsUrl = process.env.NEXT_PUBLIC_APP_URL;
 
 export async function GET() {
     try{
